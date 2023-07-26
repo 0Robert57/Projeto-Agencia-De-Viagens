@@ -1,0 +1,394 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    box-sizing: border-box;
+}
+
+/*Estilo Geral */
+
+/*Estilo para o topo*/
+
+.secao-limitada{
+    width: 70%;
+    margin: 0px auto;
+}
+
+header{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 50px;
+    gap: 5px;
+    background-color: white;
+    color: #5c14d4;
+    padding: 10px;
+}
+
+.secao-topo{
+    display: flex;
+}
+
+.logo{
+    width: 32px;
+    height: 32px;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+/*Estilo para o Orçamento*/
+
+.img-fundo{
+    background: url(img/bahia.jpg);
+    background-size: cover;
+    padding: 30px 0px
+}
+
+.secao-orcamento{
+    background-color: white;
+}
+
+.img-orcamento-topo{
+    width: 20px;
+    height: 20px;
+}
+
+.img-orcamento-topo img{
+    width: 100%;
+    height: 100%;
+    transform: rotate(-40deg);
+}
+
+.secao-orcamento-topo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    background-color: #5c14d4;
+    color: white;
+    text-align: center;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form{
+    padding: 20px;
+}
+
+.input-text{
+    height: 30px;
+    padding: 5px;
+}
+
+.secao-formulario-divisao{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.secao-formulario-divisao .flex{
+    width: calc(50% - 10px);
+}
+
+.secao-radio{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.checkbox{
+    display: flex;
+    gap: 50px;
+}
+
+.radio{
+    display: flex;
+    gap: 75px
+}
+
+.secao-orcamento label{
+    font-weight: bold;
+}
+
+.secao-orcamento button{
+    background-color: #5c14d4;
+    color: white;
+    padding: 5px;
+    border: none;
+    width:150px;
+    font-size: 15px;
+}
+
+/*Estilo para a parte principal e container geral*/
+
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container-geral{
+    height: 300px;
+    display: flex;
+    gap: 20px;
+}
+
+
+/*Container-Principal Ofertas*/
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 0px;
+    background-color: #80808029;
+}
+
+.container-principal{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.container-principal .card-img{
+    width: 100%;
+    height: 100%;
+}
+
+.container-principal img{
+    width: 100%;
+    height: 100%;
+}
+
+.container-principal figcaption{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+/*Container-Secundario*/
+
+.container-secundario{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.container-secundario figcaption{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+.container-secundario .card-img{
+    width: calc(50% - 5px);
+    height: calc(50% - 5px);
+    position: relative;
+}
+
+.container-secundario figure{
+    width: 100%;
+    height: 100%;
+}
+
+.container-secundario img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/*Fundo figcaption*/
+
+.container-geral figcaption{
+    color: white;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+    padding: 5px;
+}
+
+/*Estilo para section natureza*/
+
+.container-geral-natureza{
+    display: flex;
+    gap: 20px;
+}
+
+.container-geral-natureza .container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.container-geral-natureza .container img{
+    width: 100%;
+    height: 100%;
+}
+
+.container-geral-natureza .container-info{
+    background-color: white;
+    padding: 20px;
+    line-height: 30px;
+}
+
+/*Seção rodape*/
+
+footer{
+    background-color: #5c14d4;
+    color: white;
+    width: 100%;
+}
+
+.secao-rodape{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.secao-contato{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contato{
+    display: flex;
+    gap: 10px;
+    font-size: 15px;
+}
+
+.contato-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.contato-img{
+    width: 20px;
+    height: 20px;
+}
+
+/*Formato para telas de 540px*/
+
+@media (max-width:540px){
+
+    .secao-limitada{
+        width: 90%;
+    }
+
+    /*Formulario*/
+    .secao-formulario-divisao .flex{
+        width: 100%;
+    }
+
+    .radio{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .checkbox{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .secao-orcamento button{
+        width: 100%;
+    }
+
+    /*Ofertas*/
+
+    .container-geral, .container-secundario{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .container-principal, .container-secundario .card-img{
+        width: 100%;
+        height: 250px;
+    }
+    
+    /*Natureza*/
+
+    .container-geral-natureza{
+        flex-direction: column;
+    }
+
+    .container-geral-natureza .container{
+        width: 100%;
+    }
+
+    /*Secão rodape*/
+
+    .secao-rodape{
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .secao-contato{
+        width: 240px;
+    }
+}
+
+/*Formato para telas de no minimo 541px e maximo de 768px*/
+
+@media (min-width:541px) and (max-width:768px){
+
+    .secao-limitada{
+        width:90%;
+    }
+
+    /*Seção orçamento*/
+    .secao-orcamento button{
+        width: 100%;
+    }
+
+    /*Seção Ofertas*/
+
+    .container-geral, .container-secundario{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .container-principal, .container-secundario .card-img{
+        width: 100%;
+        height: 280px;
+    }
+
+      /*Natureza*/
+
+      .container-geral-natureza{
+        flex-direction: column;
+    }
+
+    .container-geral-natureza .container{
+        width: 100%;
+    }
+
+    /*Secão rodape*/
+
+    .secao-rodape{
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .secao-contato{
+        width: 240px;
+    }
+
+}
